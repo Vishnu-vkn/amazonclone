@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    box-sizing: border-box;
+
+}
+
+.navbar {
+    height: 60px;
+    color:white;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navlogo{
+    width: 100px;
+    height: 50px;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    
+}
+.border{
+    border : 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/** Box 2 **/
+.add-first{
+    color:#cccccc;
+    font-size: 0.85rem;
+    margin-left: 18px;
+}
+.add-second{
+    font-size: 1rem;
+    margin-left: 6px;
+}
+.addicon{
+    display: flex;
+    margin-bottom: 5px;
+    
+}
+.addicon i {
+    margin-top: -7px; /* Adjust this value as needed */
+}
+
+/** Box3 **/ 
+.navsearch{
+    display: flex;
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    border: 2px solid transparent;
+}
+
+.navsearch:hover{
+    border-color:  orange;
+
+
+}
+
+.searchselect{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.searchinput{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.searchicon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+/** Box 4 **/
+
+.lan{
+    display: flex;
+    align-items: center;
+    background-color:#0f1111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lan img{
+    width: 20px;
+    height: 14px;
+    object-fit: cover;
+}
+
+.lan select{
+    background:transparent;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/**Box 5**/
+.accountbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+span{
+    font-size: 0.7rem;
+    
+}
+
+.navsecond{
+    font-size: 0.85rem;
+    font-weight: 700;
+    background:transparent;
+    color: white;
+    border: none;
+}
+
+/** Box6 **/
+.navcart{
+    font-size: 0.9rem;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.navcart i{
+    font-size: 25px;
+}
+
+/** Panel **/
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panelops p{
+    display: inline;
+    margin-left: 15px;
+}
+
+.panelops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.epanel{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/**white section **/
+.herosection
+{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroslider{
+    display: flex;
+    width: 300%;
+    height :100%;
+    animation: slidel 15s infinite;
+}
+
+.slide{
+    width: 100%;
+    flex-shrink: 0;
+  
+}
+.slide img{
+    max-width: 100%;
+    height:auto;
+    display: block;
+}
+
+@keyframes slidel{
+    0%{
+        transform: translateX(0%);
+    }
+    33%{
+        transform: translateX(0%);
+    }
+    34%{
+        transform: translateX(-100%);
+    }
+    66%{
+        transform: translateX(-100%);
+    }
+    67%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+.heromsg{
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+    z-index: 1;
+}
+.heromsg a{
+    color: #2162A1;
+}
+
+/** shopsection **/
+.shopsection{
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box {
+    
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+.box1img{
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+    
+}
+.boxcontent{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.boxcontent p{
+    color: #2162A1;
+}
+
+/** footer **/
+
+footer{
+    margin-top: 20px;
+}
+
+.footpanel1{
+    height: 50px;
+    color: white;
+    background-color: #37475a;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footpanel2
+{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ul{
+    margin-top: 20px;
+}
+
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+ul p{
+    font-weight: 700;
+}
+/** footpanel3 **/
+
+.footpanel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    
+}
+
+/** footpanel4 **/
+.footpanel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.option{
+    padding-top: 25px;
+}
+
+.copyright{
+    padding-top: 5px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* For tablets & medium screens */
+@media screen and (max-width: 1300px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navsearch {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .panelops {
+        display: none; /* hide extra options on smaller screens */
+    }
+
+    .herosection {
+        height: 250px;
+    }
+
+    .shopsection .box {
+        width: 45%;  /* 2 items per row */
+    }
+
+    .footpanel2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 20px;
+        height: auto;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 900px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navaddress, .lan, .accountbox, .nav-return {
+        display: none; /* hide less-important navbar items */
+    }
+
+    .navcart {
+        font-size: 1rem;
+    }
+
+    .herosection {
+        height: 200px;
+    }
+
+    .heromsg {
+        font-size: 0.75rem;
+        width: 90%;
+    }
+
+    .shopsection .box {
+        width: 90%;  /* 1 item per row */
+    }
+
+    .footpanel2 {
+        grid-template-columns: 1fr; /* stack footer */
+    }
+}
+
+/* For very small devices */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navsearch {
+        width: 100%;
+    }
+
+    .herosection {
+        height: 150px;
+    }
+
+    .shopsection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shopsection .box {
+        width: 95%;
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 4000px) {
+   .slide img {
+    max-width: 200%;
+    height: 680%;
+    display: block;
+}
+}
